@@ -63,16 +63,52 @@
       font-weight: normal;
       font-style: normal;
   }
-/* * {
-    margin: 0;
-    padding: 0;
-   } */
 body{
   font-family: var(--font-main);
 }
+/*FRONT PAGE*/
 .front-page{
   width: 320px;
   background: var(--c-dark);
   padding: 30px 10px 55px 10px;
   box-sizing: border-box;
+}
+.front-page-my-name{
+font-weight: bold;
+font-size: 26px;
+line-height: 31px;
+text-transform: uppercase;
+color: var(--txt-c-accent);
+text-align: center;
+}
+.front-page-profesion{
+font-weight: bold;
+font-size: 35px;
+line-height: 42px;
+text-transform: uppercase;
+text-align: center;
+color: var(--txt-c-light);
+}
+.front-page-description{
+font-size: 16px;
+line-height: 150%
+text-align: center;
+color: var(--txt-c-light);
+}
+.navigation{
+  width: 100%;
+}
+.hire-me-btn{
+font-size: 15px;
+font-weight: 800;
+line-height: 18px;
+letter-spacing: 0.05em;
+color: var(--txt-c-accent);
+text-decoration: none;
+}
+.mobile-menu{
+width: 30px;
+height: 30px;
+background: var(--c-accent);
+display: block;
 }
