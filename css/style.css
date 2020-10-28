@@ -91,7 +91,7 @@ color: var(--txt-c-light);
 }
 .front-page-description{
 font-size: 16px;
-line-height: 150%
+line-height: 150%;
 text-align: center;
 color: var(--txt-c-light);
 }
