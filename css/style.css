@@ -68,10 +68,10 @@ body{
 }
 /*FRONT PAGE*/
 .front-page{
-  width: 320px;
-  background: var(--c-dark);
-  padding: 30px 10px 55px 10px;
-  box-sizing: border-box;
+width: 320px;
+background: var(--c-dark);
+padding: 30px 10px 55px 10px;
+box-sizing: border-box;
 }
 .front-page-my-name{
 font-weight: bold;
@@ -107,8 +107,20 @@ color: var(--txt-c-accent);
 text-decoration: none;
 }
 .mobile-menu{
-width: 30px;
 height: 30px;
+width: 30px;
 background: var(--c-accent);
-display: block;
+display: flex;
+flex-direction: row;
+justify-content:center;
+align-items: center;
+text-decoration: none;
+}
+.mobile-menu i{
+color: var(--c-light);
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+
 }
