@@ -66,12 +66,28 @@
 body{
   font-family: var(--font-main);
 }
+/*COMMON*/
+.accent-btn{
+background: var(--c-accent);
+color: var(--c-light);
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+padding: 20px 35px;
+outline: none;
+border: none;
+}
 /*FRONT PAGE*/
 .front-page{
 width: 320px;
 background: var(--c-dark);
 padding: 30px 10px 55px 10px;
 box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .front-page-my-name{
 font-weight: bold;
@@ -96,7 +112,16 @@ text-align: center;
 color: var(--txt-c-light);
 }
 .navigation{
-  width: 100%;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.navigation-part{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
 }
 .hire-me-btn{
 font-size: 15px;
@@ -105,6 +130,7 @@ line-height: 18px;
 letter-spacing: 0.05em;
 color: var(--txt-c-accent);
 text-decoration: none;
+margin: 0 20px 0 0; 
 }
 .mobile-menu{
 height: 30px;
@@ -120,7 +146,82 @@ text-decoration: none;
 color: var(--c-light);
 display: flex;
 flex-direction: row;
-justify-content:space-between;
+justify-content: space-between;
 align-items: center;
-
+}
+.front-page-gallery-btn{
+margin: 0 0 40px 0;
+}
+.front-page-my-photo{
+width: 100px;
+margin: 0 0 20px 0;
+}
+.front-page-my-decr{
+margin: 0 0 15px 0;
+font-weight: bold;
+font-size: 15px;
+line-height: 140%;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--txt-c-light);
+}
+.front-page-my-video-btn{
+margin: 0 0 35px 0;
+border:2px solid var(--c-accent);
+color: var(--txt-c-accent);
+background: transparent;
+padding: 10px 40px;
+font-weight: bold;
+display: flex;
+align-items: center;
+}
+.front-page-my-video-btn .fa-play{
+  font-size: 9px;
+  margin: 0 7px 0 0;
+}
+.front-page-laptop{
+  margin: 0 0 40px 0;
+width: 250px;
+}
+/*EXPERIENCE*/
+.experience-title{
+margin: 0 0 30px 0;
+width: 240px;
+font-weight: bold;
+font-size: 15px;
+line-height: 140%;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--txt-c-light);
+}
+.experience-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.experience-skill{
+margin: 0 0 20px 0;
+display: flex;
+align-items: center;
+}
+.experience-dots{
+margin: 0 10px 0 0;
+display: flex;
+align-items: center;
+}
+.experience-text{
+margin: 0;
+color: var(--txt-c-light);
+font-size: 16px;
+line-height: 19px;
+}
+.experience-dots-item{
+margin: 0 5px 0 0;
+color: var(--c-grey-blue);
+font-size: 8px;
+}
+.experience-dots-item-accent{
+color: var(--c-accent);
 }
