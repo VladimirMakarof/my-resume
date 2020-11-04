@@ -199,10 +199,9 @@ color: var(--txt-c-light);
 .experience-container{
 display: flex;
 flex-direction: column;
-align-items: center;
 }
 .experience-skill{
-margin: 0 0 20px 0;
+margin: 0 0 20px 28px;
 display: flex;
 align-items: center;
 }
