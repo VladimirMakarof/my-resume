@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Makarov Vladimir</title>
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/choices.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
     </head>
     <body>
         <!-- FRONT PAGE -->
@@ -224,41 +226,41 @@
                                 <div class="calculator-form-input">
                                     <lable for="calculator-form-website-type" class="calculator-form-title">What should be done:</lable>
                                         <select name="website-type" id="calculator-form-website-type" class="calculator-form-select">
-                                            <option value="landing-page">Landing page</option>
-                                            <option value="website">Website</option>
-                                            <option value="cms">CMS</option>
-                                            <option value="portal" selected>Portal</option>
-                                            <option value="e-shop">E-shop</option>
+                                            <option value="landing-page:200$ selected">Landing page</option>
+                                            <option value="website:300$">Website</option>
+                                            <option value="cms:200$">CMS</option>
+                                            <option value="portal:1000$" >Portal</option>
+                                            <option value="e-shop:800$">E-shop</option>
                                         </select>
                                 </div>
                                 <div class="calculator-form-input">
                                     <lable for="calculator-form-technologies" class="calculator-form-title">Choose preferred technologies</lable>
-                                        <select name="technologies" id="calculator-form-technologies" class="calculator-form-select">
-                                            <option value="html selected">HTML</option>
-                                            <option value="css">CSS</option>
-                                            <option value="js">JS</option>
-                                            <option value="react">React</option>
-                                            <option value="angular">Angular</option>
-                                            <option value="php">PHP</option>
+                                        <select name="technologies" id="calculator-form-technologies" class="calculator-form-select" multiple>
+                                            <option value="html:300$ selected">HTML</option>
+                                            <option value="css:200$">CSS</option>
+                                            <option value="js:300$">JS</option>
+                                            <option value="react:700$">React</option>
+                                            <option value="angular:700$">Angular</option>
+                                            <option value="php:400$">PHP</option>
                                         </select>
                                 </div>
                                <!--  ############3 -->
-                                <div class="calculator-form-input">
+                                <div class="calculator-form-input" id="calculator-form-shopping-cart">
                                     <lable for="" class="calculator-form-title">Personal account and shoping cart: </lable>
                                     <div class="calculator-form-input-radio-container">
                                         
-                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-cart-yes" name="cart-yes">
+                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-cart-yes" name="cart" value="yes" checked>
                                         <label for="calculator-form-input-cart-yes" class="calculator-form-input-label">Yes </label>
-                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-cart-no" name="cart-no">
+                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-cart-no" name="cart" value="no">
                                         <label for="calculator-form-input-cart-yes" class="calculator-form-input-label">No </label>
                                     </div>
                                 </div>
-                                <div class="calculator-form-input">
+                                <div class="calculator-form-input" id="calculator-form-email">
                                     <lable class="calculator-form-title">Request reception on your email:</lable>    
                                     <div class="calculator-form-input-radio-container">
-                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-reception-yes" name="reception-yes">
+                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-reception-yes" name="reception" value="yes" checked>
                                         <label for="calculator-form-input-reception-yes" class="calculator-form-input-label">Yes</label>
-                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-reception-no" name="reception-no">
+                                        <input type="radio" class="calculator-form-input-field" id="calculator-form-input-reception-no" name="reception" value="no">
                                         <label for="calculator-form-input-reception-no" class="calculator-form-input-label">No</label>
                                     </div>
                                 </div>
@@ -266,7 +268,7 @@
                             <p class="calculator-form-total">Cost:</p>
                             <p class="calculator-form-total-cost">300$</p>
                         </div>
-                        <input type="submit" value="Fine out the cost -" class="accent-btn">
+                        <input type="submit" value="Find out the cost  —" class="accent-btn">
                        </form> 
                     </div>
                 </section>
@@ -284,5 +286,7 @@
                        </div>
                     </div>
                 </footer>
+        <script src="js/choices.min.js"></script>
+        <script src="js/calculator.js"></script>            
     </body>
 </html>
