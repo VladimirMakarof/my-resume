@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Makarov Vladimir</title>
+        <style>.modal{display: none;}</style>
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/choices.min.css">
@@ -25,10 +26,10 @@
                 </nav>
                 <h1 class="front-page-my-name">[Vladimir Makarov]</h1>
                 <h2 class="front-page-profesion">{Frontend} _DEVELOPER</h2>
-                <p class="front-page-description">/ Using HTML, CSS, JavaScript, React Native and Node.js I help to build websites, small and medium web apps for business</p>
+                    <p class="front-page-description">/ Using HTML, CSS, JavaScript, React Native and Node.js I help to build websites, small and medium web apps for business</p>
                 <button class="front-page-gallery-btn accent-btn">See my recent works -</button>
                 <img src="img/my-photo.jpg" alt="" class="front-page-my-photo">
-                <p class="front-page-my-decr"> ABOUT ME IN 2 MINUTES</p>
+                    <p class="front-page-my-decr"> ABOUT ME IN 2 MINUTES</p>
                 <button class="front-page-my-video-btn"><i class="fas fa-play"></i> PLAY</button>
                 <img src="img/laptop.svg" alt="" class="front-page-laptop">
                 <div class="experience-container">
@@ -96,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container container-left">
                 <h3 class="about-title section-title">I code thing from scratch</h3>
                 <p class="about-desr">
@@ -112,7 +113,7 @@
                     <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur, maiores cupiditate culpa eius at aut veritatis libero inventore? Quaerat.</p>
                 </div>
             </section>
-            <section class="personal-projects">
+            <section class="personal-projects" id="projects">
                 <div class="container">
                     <h3 class="section-title personal-projects-title">My personal _projects</h3>
                     <div class="personal-project-item">
@@ -212,7 +213,7 @@
                     </form>
                 </div>
             </section>
-             <section class="calculator">
+            <section class="calculator" id="calculator">
                     <div class="container">
                         <h3 class="calculator-title section-title">Calculate_ the cost of a future project</h3>
                         <p class="calculator-descr">
@@ -236,8 +237,8 @@
                                 <div class="calculator-form-input">
                                     <lable for="calculator-form-technologies" class="calculator-form-title">Choose preferred technologies</lable>
                                         <select name="technologies" id="calculator-form-technologies" class="calculator-form-select" multiple>
-                                            <option value="html:300$ selected">HTML</option>
-                                            <option value="css:200$">CSS</option>
+                                            <option selected value="html:300$">HTML</option>
+                                            <option selected value="css:200$">CSS</option>
                                             <option value="js:300$">JS</option>
                                             <option value="react:700$">React</option>
                                             <option value="angular:700$">Angular</option>
@@ -272,7 +273,7 @@
                        </form> 
                     </div>
                 </section>
-                <footer class="footer">
+                <footer class="footer" id="contacts">
                     <div class="container">
                        <h3 class="footer-my-name">Vladimir Makarov</h3>
                        <p class="footer-my-profession">Frontend Developer</p>
@@ -286,6 +287,27 @@
                        </div>
                     </div>
                 </footer>
+<!-- MODALS --> 
+    <div class="modals-wrapper">
+<!-- MOBILE MENU -->
+    <div class="modal modal-mobile-menu">
+        <div class="modal-mobile-content">
+        <div class="container mobile-menu-container">
+            <i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
+            <nav class="mobile-menu-items">
+                <a href="#about" class="mobile-menu-item">ABOUT</a>
+                <a href="#projects" class="mobile-menu-item">PROJECTS</a>
+                <a href="#calculator" class="mobile-menu-item">COST CALCULATOR</a>
+                <a href="#contacts" class="mobile-menu-item">CONTACTS</a>
+            </nav>
+                <div class="mobile-menu-contacts">
+                    <a href="tel:+79500058393" class="mobile-menu-my-tel">+7 (950) 005 83 93</a>
+                    <a href="mailto:Stan13.09@mail.ru" class="mobile-menu-my-mail">Stan13.09@mail.ru</a>
+                </div>
+        </div>
+        </div>
+    </div>
+    </div>                    
         <script src="js/choices.min.js"></script>
         <script src="js/calculator.js"></script>            
     </body>
