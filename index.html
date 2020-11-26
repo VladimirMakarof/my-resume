@@ -20,7 +20,7 @@
                     <img src="img/goit-logo.svg" alt="goit logo"></a>
                     <div class="navigation-part">
                         <a href="" class="hire-me-btn">- HIRE ME </a>
-                        <a href="" class="mobile-menu">
+                        <a href="" class="mobile-menu" id="mobile-menu-btn">
                         <i class="fas fa-bars"></i></a>
                     </div>
                 </nav>
@@ -30,7 +30,7 @@
                 <button class="front-page-gallery-btn accent-btn">See my recent works -</button>
                 <img src="img/my-photo.jpg" alt="" class="front-page-my-photo">
                     <p class="front-page-my-decr"> ABOUT ME IN 2 MINUTES</p>
-                <button class="front-page-my-video-btn"><i class="fas fa-play"></i> PLAY</button>
+                <button class="front-page-my-video-btn" id="my-video-btn"><i class="fas fa-play"></i> PLAY</button>
                 <img src="img/laptop.svg" alt="" class="front-page-laptop">
                 <div class="experience-container">
                     <h3 class="experience-title">My Coding Skill & Experience</h3>
@@ -290,7 +290,7 @@
 <!-- MODALS --> 
     <div class="modals-wrapper">
 <!-- MOBILE MENU -->
-    <div class="modal modal-mobile-menu">
+    <div class="modal modal-mobile-menu" id="mobile-menu">
         <div class="modal-mobile-content">
         <div class="container mobile-menu-container">
             <i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
@@ -307,8 +307,23 @@
         </div>
         </div>
     </div>
-    </div>                    
+    <div class="modal modal-area-bgd" id="my-video-modal">
+        <div class="my-video-container">
+            <i class="fas fa-times modal-close-btn my-video-close-btn"></i>
+            <video class="my-video-content modal-area-content" src="video/video.mp4" controls></video>
+        </div>
+    </div>
+    <div class="modal modal-request-received" id="request-received">
+        <div class="request-received-container">
+            <i class="fas fa-times modal-close-btn "></i>
+            <h3 class="request-received-title">{Thanks}</h3>
+            <p class="request-received-primary-msg">I've received your request/</p>
+            <p class="request-received-secondary-msg">I will contact you soon =)/</p>
+        </div>
+    </div>
+    </div>
         <script src="js/choices.min.js"></script>
-        <script src="js/calculator.js"></script>            
+        <script src="js/calculator.js"></script>
+        <script src="js/modals.js"></script>
     </body>
 </html>

@@ -15,6 +15,9 @@
     --txt-c-grey-light: var(--c-grey-light);
     --txt-c-accent: var(--c-accent);
     --txt-c-light: var(--c-light);
+
+   /* modals */
+   --modal-bgd-dark: rgba(20, 29, 45, 0.8);
   
     /* font */
     --font-main: 'Acrom', sans-serif;
@@ -116,6 +119,7 @@ opacity: 0;
 transition: all 0.3s ease-in-out;
 pointer-events: none;
 display: block;
+background: var(--modal-bgd-dark);
 }
 .modal-active{
 opacity: 1;
@@ -176,6 +180,10 @@ top:16px;
 right: 16px;
 cursor: pointer;
 }
+.body-scroll-disable{
+overflow: hidden;
+}
+/* MOBILE MENU */
 .mobile-menu-close-btn{
 background: var(--c-accent);
 color: var(--c-light);
@@ -184,6 +192,64 @@ padding: 10px 14px;
 .mobile-menu-contacts{
 display: flex;
 flex-direction: column;
+}
+/* MY VIDEO MODAL */
+.my-video-content{
+width: 100%;
+}
+.my-video-container{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+padding: 10px 20px;
+}
+.my-video-close-btn{
+background: var(--c-light);
+color: var(--c-dark);
+cursor: pointer;
+padding: 10px 14px;
+}
+/*REQUEST RECEIVED MODAL*/
+.request-received-container{
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: var(--c-light);
+padding: 80px 10px;
+position: relative;
+}
+.modal-request-received{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 10px;
+box-sizing: border-box;
+}
+.request-received-title{
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+color: var(--txt-c-accent);
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+.request-received-primary-msg{
+font-weight: bold;
+font-size: 26px;
+line-height: 31px;
+text-align: center;
+margin: 0 0 20px 0;
+text-transform: uppercase;
+}
+.request-received-secondary-msg{
+font-size: 17px;
+line-height: 130%;
+text-align: center;
+width: 185px;
+margin: 0;
 }
 /*FRONT PAGE*/
 .front-page{
@@ -473,9 +539,6 @@ border-bottom: 1px solid var(--c-grey-light);
 margin-bottom: 0;
 }
 /*CALL-BACK FORM*/
-.callback-form{
-
-}
 .callback-form-container{
 padding: 35px 30px 40px 30px;
 background: var(--c-dark);
@@ -484,7 +547,6 @@ flex-direction: column;
 align-items: center;
 width: 100%;
 box-sizing: border-box;
-
 }
 .callback-form-title{
 margin: 0 0 20px 0;
