@@ -251,6 +251,38 @@ text-align: center;
 width: 185px;
 margin: 0;
 }
+/*PROJECTS MODAL*/
+.projects-modal-container{
+text-align: left;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+background: var(--c-light);
+padding: 45px 25px;
+position: relative;
+box-sizing: border-box;
+}
+.project-modal{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 10px;
+box-sizing: border-box;
+}
+.projects-modal-title{
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+color: var(--txt-c-dark);
+text-transform: uppercase;
+}
+.projects-modal-text{
+font-size: 16px;
+line-height: 145%;
+color: var(--txt-c-dark);
+margin-bottom: 30px;
+}
 /*FRONT PAGE*/
 .front-page{
 width: 100%;
