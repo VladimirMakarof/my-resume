@@ -12,7 +12,7 @@
         
     </head>
     <body>
-        <!-- FRONT PAGE -->
+<!-- FRONT PAGE -->
         <section class="front-page">
             <div class="container">
                 <nav class="navigation">
@@ -25,12 +25,20 @@
                     </div>
                 </nav>
                 <h1 class="front-page-my-name">[Vladimir Makarov]</h1>
-                <h2 class="front-page-profesion">{Frontend} _DEVELOPER</h2>
+                <h2 class="front-page-profesion">
+                    <span class="profesion-part-1">{Frontend}</span>  
+                    <span class="profesion-part-2">_DEVELOPER</span>  
+                </h2>
                     <p class="front-page-description">/ Using HTML, CSS, JavaScript, React Native and Node.js I help to build websites, small and medium web apps for business</p>
                 <button class="front-page-gallery-btn accent-btn">See my recent works -</button>
-                <img src="img/my-photo.jpg" alt="" class="front-page-my-photo">
-                    <p class="front-page-my-decr"> ABOUT ME IN 2 MINUTES</p>
-                <button class="front-page-my-video-btn" id="my-video-btn"><i class="fas fa-play"></i> PLAY</button>
+                <div class="front-page-my-info-container">
+                    <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo">
+                    <div class="front-page-about-me-container">
+                        <p class="front-page-my-decr mobile-element"> ABOUT ME IN 2 MINUTES</p>
+                        <p class="front-page-my-decr tablet-element"> ABOUT ME <br> IN 2 MINUTES</p>
+                        <button class="front-page-my-video-btn" id="my-video-btn"><i class="fas fa-play"></i> PLAY</button>
+                    </div>
+                </div>
                 <img src="img/laptop.svg" alt="" class="front-page-laptop">
                 <div class="experience-container">
                     <h3 class="experience-title">My Coding Skill & Experience</h3>
@@ -99,18 +107,27 @@
         </section>
         <section class="about" id="about">
             <div class="container container-left">
-                <h3 class="about-title section-title">I code thing from scratch</h3>
-                <p class="about-desr">
+                <h3 class="about-title section-title">I code thing from scratch_</h3>
+                
+                <p class="about-desr mobile-element">
                     <span>[and help to </span>
                     <span>create great web</span>
-                    <span>apps]</span></p>
+                    <span>apps]</span>
+                </p>
+                <div class="tablet-element">
+                    <p class="about-desr">
+                        <span>[and help to create</span>
+                        <span> great web apps]</span>
+                    </p>
+                </div>
                     <div class="about-img-container">
                         <p class="about-img-text">WEB
                             <img src="img/web-apps-laptop.png" alt="" class="about-img">
                         </p>
                     </div>
-                    <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore exercitationem inventore maiores amet officiis totam quasi nemo architecto magni soluta.</p>
-                    <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur, maiores cupiditate culpa eius at aut veritatis libero inventore? Quaerat.</p>
+                    <p class="about-text mobile-element">/ I will help you to create a high-performance Landing Page, functional corporate website for your business, interactive web app for SaaS, startup, or other services.</p>
+                    <p class="about-text tablet-element">/ I will help you to create <br> a high-performance Landing Page, <br> functional corporate website for your <br> business, interactive web app for <br> SaaS, startup, or other services.</p>
+                    <p class="about-text">/ My specialization is front-end development — client side of the web. But I also have full-stack developer experience.</p>
                 </div>
             </section>
             <section class="personal-projects" id="projects">
@@ -126,7 +143,7 @@
                             <img src="img/projects/personal/full-stack.jpg" alt="full-stack app" class="personal-project-img">
                         </div>
                         <p class="personal-project-name"> <i class="fas fa-laptop-code personal-project-icon"></i> <span>Technology: HTML, CSS3, JS</span> </p>
-                        <button class="personal-project-btn accent-btn">MORE DETAILS -</button>
+                        <button class="personal-project-btn accent-btn" id="personal-project-full-stack-btn">MORE DETAILS -</button>
                     </div>
                     <div class="personal-project-item">
                         <div class="personal-project-item-container">
@@ -138,7 +155,7 @@
                             <img src="img/projects/personal/wedding.jpg" alt="wedding" class="personal-project-img">
                         </div>
                         <p class="personal-project-name"> <i class="fas fa-laptop-code personal-project-icon"></i> <span>Technology: HTML, CSS, JavaScript, PHP.</span> </p>
-                        <button class="personal-project-btn accent-btn">MORE DETAILS -</button>
+                        <button class="personal-project-btn accent-btn" id="personal-project-wedding-project-btn">MORE DETAILS -</button>
                     </div>
                     <div class="personal-project-item">
                         <div class="personal-project-item-container">
@@ -150,7 +167,7 @@
                             <img src="img/projects/personal/pro-test.jpg" alt="pro-test" class="personal-project-img">
                         </div>
                         <p class="personal-project-name"> <i class="fas fa-laptop-code personal-project-icon"></i> <span>Technology: React.js, Node.js.</span> </p>
-                        <button class="personal-project-btn accent-btn">MORE DETAILS -</button>
+                        <button class="personal-project-btn accent-btn" id="personal-project-pro-test-btn">MORE DETAILS -</button>
                     </div>
                     <div class="personal-project-item">
                         <div class="personal-project-item-container">
@@ -162,7 +179,7 @@
                             <img src="img/projects/personal/goit.jpg" alt="goit" class="personal-project-img">
                         </div>
                         <p class="personal-project-name"> <i class="fas fa-laptop-code personal-project-icon"></i> <span>Technology: HTML, CSS, JavaScript, Wordpress.</span></p>
-                        <button class="personal-project-btn accent-btn">MORE DETAILS -</button>
+                        <button class="personal-project-btn accent-btn" id="personal-project-goit-btn">MORE DETAILS -</button>
                     </div>
                 </div>
             </section>
@@ -182,7 +199,7 @@
                             <img src="img/projects/team/questify.jpg" alt="questify" class="personal-project-img">
                         </div>
                         <p class="team-project-name"> <i class="fas fa-laptop-code personal-project-icon"></i> Technology: React.js, Node.js</p>
-                        <button class="personal-project-btn accent-btn">MORE DETAILS -</button>
+                        <button class="personal-project-btn accent-btn" id="team-project-questify-btn">MORE DETAILS -</button>
                     </div>
                     <div class="personal-project-item">
                         <div class="personal-project-item-container">
@@ -195,20 +212,20 @@
                         </div>
                         <p class="team-project-name"> <i class="fas fa-laptop-code personal-project-icon"></i> Technology: React.js, Node.js
                         </p>
-                        <button class="personal-project-btn accent-btn">MORE DETAILS -</button>
+                        <button class="personal-project-btn accent-btn" id="team-project-it-test-btn">MORE DETAILS -</button>
                     </div>
                 </div>
             </section>
-            <!-- CALL-BACK FORM -->
+<!-- CALL-BACK FORM -->
             <section class="callback-form">
                 <div class="container">
-                    <form action="" class="callback-form-container">
+                    <form action="" class="callback-form-container" id="callback-form">
                         <h3 class="callback-form-title">/Are you mining [a project?]</h3>
                         <p class="callback-form-descr">Leave a request to discuss the task and technical requirements
                         </p>
-                        <input type="text" class="callback-form-input" placeholder="Name">
-                        <input type="email" class="callback-form-input" placeholder="E-mail">
-                        <input type="tel" class="callback-form-input" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-name-input">
+                        <input type="email" class="callback-form-input" placeholder="E-mail" id="callback-form-email-input">
+                        <input type="tel" class="callback-form-input" placeholder="+7 (__) ___-__-__" id="callback-form-tel-input">
                         <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
                     </form>
                 </div>
@@ -288,7 +305,7 @@
                     </div>
                 </footer>
 <!-- MODALS --> 
-    <div class="modals-wrapper">
+<div class="modals-wrapper">
 <!-- MOBILE MENU -->
     <div class="modal modal-mobile-menu" id="mobile-menu">
         <div class="modal-mobile-content">
@@ -314,9 +331,9 @@
             <video class="my-video-content modal-area-content" src="video/video.mp4" controls></video>
         </div>
     </div>
-<!-- REQUEST -->
-    <div class="modal modal-request-received" id="request-received">
-        <div class="request-received-container">
+<!-- REQUEST RECEIVED -->
+    <div class="modal modal-request-received modal-area-bgd" id="request-received">
+        <div class="request-received-container modal-area-content">
             <i class="fas fa-times modal-close-btn "></i>
             <h3 class="request-received-title">{Thanks}</h3>
             <p class="request-received-primary-msg">I've received your request/</p>
@@ -324,20 +341,89 @@
         </div>
     </div>
 <!-- PERSONAL PROJECTS FULL STACK  -->
-    <div class="modal project-modal modal-active">
-        <div class="projects-modal-container">
+    <div class="modal project-modal modal-area-bgd" id="personal-project-full-stack">
+        <div class="projects-modal-container modal-area-content">
             <i class="fas fa-times modal-close-btn "></i>
-            <h3 class="projects-modal-title">GOIT FULL STACK РАЗРАБОТЧИК</h3>
-            <p class="projects-modal-text">"Одностраничный лендинг с использованием HTML и CSS. Сайт рассказывает потенциальным клиентам о преимуществах обучения
+            <div class="project-modal-scrollable">
+                <img class="projects-modal-img" src="img/projects/personal/full-stack.jpg" alt="full stack-projects-img1">
+                <a href="https://fullstackonline.goit.ua/" class="projects-modal-title">GOIT FULL STACK РАЗРАБОТЧИК</a>
+                <p class="projects-modal-text">"Одностраничный лендинг с использованием HTML и CSS. Сайт рассказывает потенциальным клиентам о преимуществах обучения
             на курсе, программе, стоимости и длительности занятий.</p>
-            <p class="projects-modal-text">Также на сайте добавлена форма обратной связи, соцсети и возможность посмотреть видео-отзывы выпускников, не уходя на
+                <p class="projects-modal-text">Также на сайте добавлена форма обратной связи, соцсети и возможность посмотреть видео-отзывы выпускников, не уходя на
             внешние ресурсы. Компактно и в доступной форме дана вся информация о курсе, преподавателях и процессе обучения. Формат
             сайта подходит для небольших компаний или раскрытия информации о конкретном продукте."</p>
+            </div>
         </div>
     </div>
+<!-- PERSONAL PROJECTS WEDDING -->
+    <div class="modal project-modal modal-area-bgd" id="personal-project-wedding-project">
+        <div class="projects-modal-container modal-area-content">
+            <i class="fas fa-times modal-close-btn "></i>
+            <div class="project-modal-scrollable">
+                <img class="projects-modal-img" src="img/projects/personal/wedding.jpg" alt="full stack-projects-img1">
+                <a href="https://www.beeruza.com.ua/" class="projects-modal-title">Beeruza - свадебные пригласительные и аксессуары</a>
+                <p class="projects-modal-text">"Интернет-магазин свадебных принадлежностей. Сайт предназначен для подготовки к свадьбе. 
+              Он экономит время и позволяет купить все аксессуары для свадьбы в одном месте: приглашения, декор, открытки, планер. 
+              Также можно заказать звонок и задать все вопросы по телефону. </p>
+                <p class="projects-modal-text">Чтобы приобрести выбранные товары из нужно положить в корзину и оплатить удобным способом. 
+              Формат сайта подходит для бизнеса и продажи товаров."</p>
+            </div>
+        </div>
     </div>
-        <script src="js/choices.min.js"></script>
-        <script src="js/calculator.js"></script>
-        <script src="js/modals.js"></script>
+<!-- PERSONAL PROJECTS PRO-TEST -->
+    <div class="modal project-modal modal-area-bgd" id="personal-project-pro-test">
+        <div class="projects-modal-container modal-area-content">
+            <i class="fas fa-times modal-close-btn "></i>
+            <div class="project-modal-scrollable">
+                <img class="projects-modal-img" src="img/projects/personal/pro-test.jpg" alt="pro-test-projects-img1">
+                <a href="https://www.beeruza.com.ua/" class="projects-modal-title">Pro test - техническая подготовка QA</a>
+                <p class="projects-modal-text">Веб-приложение Pro Test поможет начинающему и опытному QA-инженеру оценить уровень своих знаний. В данном приложении реализована регистрация и логинизация пользователя через google account, а также через e-mail и пароль. 
+              После чего пользователь может пройти тест и увидеть его результаты.</p>
+            </div>
+        </div>
+    </div>
+<!-- PERSONAL PROJECTS GOIT -->
+    <div class="modal project-modal modal-area-bgd" id="personal-project-goit">
+        <div class="projects-modal-container modal-area-content">
+            <i class="fas fa-times modal-close-btn "></i>
+            <div class="project-modal-scrollable">
+                <img class="projects-modal-img" src="img/projects/personal/goit.jpg" alt="goit-projects-img1">
+                <a href="https://goit.ua/" class="projects-modal-title">GoIT - курсы программирования</a>
+                <p class="projects-modal-text">Многостраничный сайт с использованием HTML, CSS и JavaScript. 
+                На сайте есть форма обратной связи и pop-up, который появляется через 30 секунд вашего присутствия на сайте.</p>
+                <p class="projects-modal-text">Также на сайте есть отдельная страница курсов, с последующим переходом на лендинг каждого отдельного курса. Постоянная рубрика Journal сделана в виде блога с полезной информацией для начинающих разработчиков.</p>
+                <p class="projects-modal-text">На сайте есть отзывы выпускников, контакты для связи и события компании.
+                Кнопка в правом углу переводит пользователя в телеграм-бот, где он может создать свой собственный сайт с автопроверкой заданий.</p>
+            </div>
+        </div>
+    </div>
+<!-- TEAM PROJECTS QUESTIFY  -->
+    <div class="modal project-modal modal-area-bgd" id="team-project-questify">
+        <div class="projects-modal-container modal-area-content">
+            <i class="fas fa-times modal-close-btn "></i>
+            <div class="project-modal-scrollable">
+                <img class="projects-modal-img" src="img/projects/team/questify.jpg" alt="questify-projects-img1">
+                <a href="https://questify.goit.co.ua/" class="projects-modal-title">Questify - turn your life into a thrilling game</a>
+                <p class="projects-modal-text">Увлекательное веб-приложение, которое призвано помочь превратить рутинные задачи в увлекательные квесты и захватывающие челенджи, которые система сама ставит перед пользователем.</p>
+            </div>
+        </div>
+    </div>
+<!-- TEAM PROJECTS TEST IT -->
+    <div class="modal project-modal modal-area-bgd" id="team-project-it-test">
+        <div class="projects-modal-container modal-area-content">
+            <i class="fas fa-times modal-close-btn "></i>
+            <div class="project-modal-scrollable">
+                <img class="projects-modal-img" src="img/projects/team/it-test.jpg" alt="it-test-projects-img1">
+                <a href="https://testit.co.ua/" class="projects-modal-title">Тест на профессиональную личность в IT</a>
+                <p class="projects-modal-text">Web-приложение, которое поможет родителям определиться к какой профессии в IT склонен их ребенок.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/choices.min.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/project-modals.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/callback-form.js"></script>
     </body>
 </html>
