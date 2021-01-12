@@ -30,11 +30,24 @@ callBackForm.addEventListener('submit', function(event) {
         return;
     }
 
+    if (oneFieldNotValid) {
+        return;
+    }
+
+    requestRecievedModal.classList.add('modal-active');
+    document.body.classList.add(BODY_SCROLL_DISABLE_CLASS);
+
+    phoneInput.value = '';
+    emailInput.value = '';
+
     requestRecievedModal.classList.add('modal-active');
     phoneInput.value = '';
     emailInput.value = '';
     nameInput.value = '';
-})
+}
+
+
+)
 
 phoneInput.addEventListener('click', function(event){
     const element = event.target; 
