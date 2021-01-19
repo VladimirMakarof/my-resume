@@ -665,6 +665,11 @@ padding-bottom: 75px;
 .calculator-icon{
 width: 195px;
 }
+.calculator-info-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 .calculator-descr{
 font-size: 24px;
 line-height: 150%;
@@ -852,9 +857,9 @@ font-size: 36px;
 line-height: 43px;
 margin-bottom: 0;
 }
-/*.front-page-main-info{
+.front-page-main-info{
 width: 354px;
-}*/
+}
 .front-page-profesion{
 margin: 20px 0 30px 0;
 font-size: 55px;
@@ -972,6 +977,9 @@ margin-bottom: 10px;
 align-items: normal;
 position: relative;
 padding: 20px 10px 90px 10px;
+}
+.calculator-info-container{
+align-items: flex-start;
 }
 .calculator-title{
 width: 605px;
@@ -1222,5 +1230,42 @@ margin-right: 0px;
 .callback-form-submit{
 width: 260px;
 padding: 15px 20px;
+}
+.calculator .container{
+flex-direction: row;
+padding: 150px 10px;
+}
+.calculator-info-container{
+position: relative;
+margin-right: 20px;
+box-sizing: border-box;
+width: calc(100% - 386px - 20px);
+}
+.calculator-form{
+padding: 40px 50px;
+width: 386px;
+box-sizing: border-box;
+}
+.calculator-title{
+margin-top: 0;
+font-size: 70px;
+line-height: 84px;
+width: 100%;
+margin-bottom: 50px;
+}
+.calculator-icon {
+top: 360px;
+z-index: 1;
+}
+.calculator-descr{
+text-align: left;
+}
+.calculator-descr span{
+z-index: 2;
+}
+.calculator-text{
+margin-top: 20px;
+width: 348px;
+z-index: 2;
 }
 }
