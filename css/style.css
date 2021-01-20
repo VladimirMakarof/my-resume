@@ -77,7 +77,7 @@ scroll-behavior: smooth;
 }
 /*COMMON*/
 .tablet-element{
-display: none !important;
+display: none;
 }
 .desktop-element{
 display: none !important;
@@ -204,6 +204,7 @@ color: var(--c-grey-blue);
 top:16px;
 right: 16px;
 cursor: pointer;
+z-index: 4;
 }
 .body-scroll-disable{
 overflow: hidden;
@@ -362,6 +363,7 @@ line-height: 42px;
 text-transform: uppercase;
 text-align: center;
 color: var(--txt-c-light);
+width: 235px;
 }
 .front-page-description{
 font-size: 16px;
@@ -920,7 +922,7 @@ margin-bottom: 60px;
 }
 .front-page-my-photo{
 width: 140px;
-margin: 0 35px 0 0;
+margin-right: 35px;
 }
 .front-page-my-decr{
 text-align: left;
@@ -1116,7 +1118,7 @@ margin-left: 60px;
 position: relative;
 flex-direction: row;
 justify-content: space-between;
-align-items: start;
+align-items: flex-start;
 margin-top: 115px;
 }
 .experience-wrapper{
@@ -1124,6 +1126,10 @@ order: 1;
 }
 .front-page-my-info-container{
 order: 3;
+width: 240px;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
 }
 .front-page-laptop{
 position: absolute;
@@ -1149,7 +1155,7 @@ display: flex;
 flex-wrap: wrap;
 }
 .personal-project-item{
-width: calc(50%-20%);
+width: calc(50% - 20px);
 }
 .personal-project-item:nth-child(odd){
 margin: 0 20px 40px 0;
@@ -1318,7 +1324,7 @@ align-items: center;
 .footer-my-profession{
 margin-bottom: 0px;
 }
-.experience-container{
+.request-received-container {
 padding: 60px 130px 80px 130px;
 }
 .request-received-primary-msg{
