@@ -32,6 +32,8 @@
     /* animation */
     --animation-fast: 0.1s;
     --animation-slow: 0.3s;
+
+    --animation-transition: all 0.2s ease-in-out;
   }
   
   @font-face {
@@ -75,10 +77,10 @@ scroll-behavior: smooth;
 }
 /*COMMON*/
 .tablet-element{
-display: none;
+display: none !important;
 }
 .desktop-element{
-display: none;
+display: none !important;
 }
 .mobile-element{
 display: block;
@@ -96,6 +98,12 @@ outline: none;
 border: none;
 cursor: pointer;
 text-decoration: none;
+transition: var(--animation-transition);
+}
+.accent-btn:hover{
+outline: 1px solid var(--c-accent);
+background: transparent;
+color: var(--txt-c-accent);
 }
 .container{
 width: 100%;
@@ -131,6 +139,7 @@ transition: all 0.3s ease-in-out;
 pointer-events: none;
 display: block;
 background: var(--modal-bgd-dark);
+z-index: 3;
 }
 .modal-active{
 opacity: 1;
@@ -159,6 +168,11 @@ color: var(--txt-c-grey);
 text-decoration: none;
 text-align: center;
 margin: 0 0 35px 0;
+transition: var(--animation-transition);
+}
+.mobile-menu-item:hover{
+color:var(--c-accent);
+font-size: 18px;
 }
 .mobile-menu-my-tel{
 font-size: 17px;
@@ -269,13 +283,12 @@ background: var(--c-light);
 padding: 45px 0px;
 position: relative;
 box-sizing: border-box;
-height: 80%;
-overflow-y: auto;
+height: 85%;
 }
 .project-modal-scrollable{
 overflow-y: auto;
 height: 100%;
-padding: 0 25px;  
+padding: 0 25px;
 }
 .project-modal{
 display: flex;
@@ -314,6 +327,12 @@ width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
+}
+.logo-link{
+transition: var(--animation-transition);
+}
+.logo-link:hover{
+transform: scale(1.1);
 }
 .front-page-main-info{
 display: flex;
@@ -414,6 +433,12 @@ padding: 10px 40px;
 font-weight: bold;
 display: inline-flex;
 align-items: center;
+cursor: pointer;
+transition: var(--animation-transition);
+}
+.front-page-my-video-btn:hover{
+background: var(--c-accent);
+color: var(--txt-c-light);
 }
 .front-page-my-video-btn .fa-play{
 font-size: 9px;
@@ -575,6 +600,11 @@ color: var(--txt-c-accent);
 padding: 15px 30px 10px 10px;
 margin: 0 0 30px 0;
 }
+.swiper-container {
+width: 300px;
+height: auto;
+margin-bottom: 30px;
+}
 /*TEAM PROJECT*/
 .team-projects .container{
 padding-bottom: 0;
@@ -730,6 +760,7 @@ color: var(--txt-c-dark);
 }
 .calculator-form-input-field{
 margin: 0 10px 0 0;
+cursor: pointer;
 }
 .calculator-form-total-cost{
 font-size: 36px;
@@ -847,7 +878,7 @@ min-width: 640px;
 display: none;
 }
 .tablet-element{
-display: block;
+display: block !important;
 }
 .desktop-element{
 display: none;
@@ -856,6 +887,9 @@ display: none;
 font-size: 36px;
 line-height: 43px;
 margin-bottom: 0;
+}
+.swiper-container {
+width: 600px;
 }
 .front-page-main-info{
 width: 354px;
@@ -1036,10 +1070,10 @@ margin-bottom: 0;
 max-width: var(--desktop-lg);
 }
 .tablet-element{
-display: none;
+display: none !important;
 }
 .desktop-element{
-display: block;
+display: block !important;
 }
 .front-page-profesion{
 font-size: 70px;
@@ -1054,6 +1088,9 @@ align-items: flex-start;
 order: 2;
 z-index: 2;
 position: relative;
+}
+.swiper-container {
+width: 900px;
 }
 .front-page-my-photo{
 position: absolute;
@@ -1267,5 +1304,30 @@ z-index: 2;
 margin-top: 20px;
 width: 348px;
 z-index: 2;
+}
+.footer .container{
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.footer-main-container{
+width: calc(50% + 100px);
+justify-content: space-between;
+align-items: center;
+}
+.footer-my-profession{
+margin-bottom: 0px;
+}
+.experience-container{
+padding: 60px 130px 80px 130px;
+}
+.request-received-primary-msg{
+width: 350px;
+}
+.request-received-secondary-msg{
+width: auto;
+}
+.projects-modal-container{
+padding: 95px;
 }
 }

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makarov Vladimir</title>
     <style>
-        .modal {
-            display: none;
-        }
+        .modal {display: none;}
     </style>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 
 </head>
 
@@ -43,7 +43,7 @@
             </nav>
             <div class="front-page-wrapper">
                 <div class="front-page-main-info">
-                    <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo desktop-element">
+                    <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo desktop-element" data-aos="fade-down" data-aos-delay="1500">
                     <h1 class="front-page-my-name">[Vladimir Makarov]</h1>
                     <h2 class="front-page-profesion">
                         <span class="profesion-part-1">{Frontend}</span>
@@ -56,7 +56,7 @@
                 <div class="front-page-my-info-container">
                     <img src="img/my-photo.jpg" alt="my photo"
                         class="front-page-my-photo mobile-element tablet-element">
-                    <div class="front-page-about-me-container">
+                    <div class="front-page-about-me-container" data-aos="fade-left" data-aos-delay="1000">
                         <p class="front-page-my-decr mobile-element"> ABOUT ME IN 2 MINUTES</p>
                         <p class="front-page-my-decr tablet-element"> ABOUT ME <br> IN 2 MINUTES</p>
                         <p class="front-page-my-decr desktop-element"> ABOUT ME <br> IN 2 MINUTES</p>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <img src="img/laptop.svg" alt="" class="front-page-laptop">
-                <div class="experience-wrapper">
+                <div class="experience-wrapper" data-aos="fade-right" data-aos-delay="500">
                     <div class="experience-container">
                     </div>
                     <h3 class="experience-title">My Coding Skill & Experience</h3>
@@ -137,13 +137,13 @@
     <section class="about" id="about">
         <div class="container container-left">
             <div class="about-content-wrapper">
-                <h3 class="about-title section-title">I code thing from scratch_</h3>
-                <p class="about-desr mobile-element">
+                <h3 class="about-title section-title" data-aos="fade-right" data-aos-delay="500">I code thing from scratch_</h3>
+                <p class="about-desr mobile-element" data-aos="fade-right" data-aos-delay="1000">
                     <span>[and help to </span>
                     <span>create great web</span>
                     <span>apps]</span>
                 </p>
-                <div class="tablet-element desktop-element">
+                <div class="tablet-element desktop-element" data-aos="fade-right" data-aos-delay="1000">
                     <p class="about-desr">
                         <span>[and help to create</span>
                         <span> great web apps]</span>
@@ -154,13 +154,13 @@
                         <img src="img/web-apps-laptop.png" alt="" class="about-img">
                     </p>
                 </div>
-                <p class="about-text mobile-element desktop-element">/ I will help you to create a high-performance
+                <p class="about-text mobile-element desktop-element" data-aos="fade-right" data-aos-delay="1100">/ I will help you to create a high-performance
                     Landing Page, functional corporate website for your business, interactive web app for SaaS, startup,
                     or other services.</p>
                 <p class="about-text tablet-element">/ I will help you to create <br> a high-performance Landing Page,
                     <br> functional corporate website for your <br> business, interactive web app for <br> SaaS,
                     startup, or other services.</p>
-                <p class="about-text">/ My specialization is front-end development — client side of the web. But I also
+                <p class="about-text" data-aos="fade-right" data-aos-delay="1200">/ My specialization is front-end development — client side of the web. But I also
                     have full-stack developer experience.</p>
             </div>
             <div class="about-projects desktop-element">
@@ -173,7 +173,7 @@
     </section>
     <section class="personal-projects" id="projects">
         <div class="container">
-            <h3 class="section-title personal-projects-title">My personal _projects</h3>
+            <h3 class="section-title personal-projects-title" data-aos="fade-right" data-aos-anchor-placement="top-center">My personal _projects</h3>
             <div class="personal-project-item-wrapper">
                 <div class="personal-project-item">
                     <div class="personal-project-item-container">
@@ -238,9 +238,9 @@
     <!-- TEAM-PROJECTS -->
     <section class="team-projects">
         <div class="container">
-            <h3 class="section-title team-projects-title">
+            <h3 class="section-title team-projects-title" data-aos="fade-right" data-aos-anchor-placement="top-center">
                 <span class="team-projects-title-bgd">TEAM</span>
-                Teamwork _progject
+                Teamwork _project
             </h3>
             <div class="personal-project-item-wrapper">
                 <div class="personal-project-item">
@@ -442,8 +442,26 @@
             <div class="projects-modal-container modal-area-content">
                 <i class="fas fa-times modal-close-btn "></i>
                 <div class="project-modal-scrollable">
-                    <img class="projects-modal-img" src="img/projects/personal/full-stack.jpg"
-                        alt="full stack-projects-img1">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <img src="img/projects/personal/full-stack/full-stack-1.png" class="swiper-slide" alt="full stack img 1">
+                            <img src="img/projects/personal/full-stack/full-stack-2.png" class="swiper-slide" alt="full stack img 2">
+                            <img src="img/projects/personal/full-stack/full-stack-3.png" class="swiper-slide" alt="full stack img 3">
+                            <img src="img/projects/personal/full-stack/full-stack-4.png" class="swiper-slide" alt="full stack img 4">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev tablet-element desktop-element"></div>
+                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                     <a href="https://fullstackonline.goit.ua/" class="projects-modal-title">GOIT FULL STACK
                         РАЗРАБОТЧИК</a>
                     <p class="projects-modal-text">"Одностраничный лендинг с использованием HTML и CSS. Сайт
@@ -462,8 +480,25 @@
             <div class="projects-modal-container modal-area-content">
                 <i class="fas fa-times modal-close-btn "></i>
                 <div class="project-modal-scrollable">
-                    <img class="projects-modal-img" src="img/projects/personal/wedding.jpg"
-                        alt="full stack-projects-img1">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <img src="img/projects/personal/wedding/wedding-1.jpg" class="swiper-slide" alt="wedding img 1">
+                            <img src="img/projects/personal/wedding/wedding-2.jpg" class="swiper-slide" alt="wedding img 2">
+                            <img src="img/projects/personal/wedding/wedding-3.jpg" class="swiper-slide" alt="wedding img 3">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev tablet-element desktop-element"></div>
+                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                     <a href="https://www.beeruza.com.ua/" class="projects-modal-title">Beeruza - свадебные
                         пригласительные и аксессуары</a>
                     <p class="projects-modal-text">"Интернет-магазин свадебных принадлежностей. Сайт предназначен для
@@ -482,8 +517,25 @@
             <div class="projects-modal-container modal-area-content">
                 <i class="fas fa-times modal-close-btn "></i>
                 <div class="project-modal-scrollable">
-                    <img class="projects-modal-img" src="img/projects/personal/pro-test.jpg"
-                        alt="pro-test-projects-img1">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <img src="img/projects/personal/pro-test/pro-test-1.jpg" class="swiper-slide" alt="pro-test img 1">
+                            <img src="img/projects/personal/pro-test/pro-test-2.jpg" class="swiper-slide" alt="pro-test img 2">
+                            <img src="img/projects/personal/pro-test/pro-test-3.jpg" class="swiper-slide" alt="pro-test img 3">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev tablet-element desktop-element"></div>
+                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                     <a href="https://www.beeruza.com.ua/" class="projects-modal-title">Pro test - техническая подготовка
                         QA</a>
                     <p class="projects-modal-text">Веб-приложение Pro Test поможет начинающему и опытному QA-инженеру
@@ -498,7 +550,25 @@
             <div class="projects-modal-container modal-area-content">
                 <i class="fas fa-times modal-close-btn "></i>
                 <div class="project-modal-scrollable">
-                    <img class="projects-modal-img" src="img/projects/personal/goit.jpg" alt="goit-projects-img1">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <img src="img/projects/personal/goit/goit-1.jpg" class="swiper-slide" alt="goit img 1">
+                            <img src="img/projects/personal/goit/goit-2.jpg" class="swiper-slide" alt="goit img 2">
+                            <img src="img/projects/personal/goit/goit-3.jpg" class="swiper-slide" alt="goit img 3">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev tablet-element desktop-element"></div>
+                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                     <a href="https://goit.ua/" class="projects-modal-title">GoIT - курсы программирования</a>
                     <p class="projects-modal-text">Многостраничный сайт с использованием HTML, CSS и JavaScript.
                         На сайте есть форма обратной связи и pop-up, который появляется через 30 секунд вашего
@@ -518,7 +588,25 @@
             <div class="projects-modal-container modal-area-content">
                 <i class="fas fa-times modal-close-btn "></i>
                 <div class="project-modal-scrollable">
-                    <img class="projects-modal-img" src="img/projects/team/questify.jpg" alt="questify-projects-img1">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <img src="img/projects/team/questify/questify-1.jpg" class="swiper-slide" alt="questify img 1">
+                            <img src="img/projects/team/questify/questify-2.jpg" class="swiper-slide" alt="questify img 2">
+                            <img src="img/projects/team/questify/questify-3.jpg" class="swiper-slide" alt="questify img 3">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev tablet-element desktop-element"></div>
+                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                     <a href="https://questify.goit.co.ua/" class="projects-modal-title">Questify - turn your life into a
                         thrilling game</a>
                     <p class="projects-modal-text">Увлекательное веб-приложение, которое призвано помочь превратить
@@ -532,7 +620,25 @@
             <div class="projects-modal-container modal-area-content">
                 <i class="fas fa-times modal-close-btn "></i>
                 <div class="project-modal-scrollable">
-                    <img class="projects-modal-img" src="img/projects/team/it-test.jpg" alt="it-test-projects-img1">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <img src="img/projects/team/it-test/it-test-1.jpg" class="swiper-slide" alt="it-test img 1">
+                            <img src="img/projects/team/it-test/it-test-2.jpg" class="swiper-slide" alt="it-test img 2">
+                            <img src="img/projects/team/it-test/it-test-3.jpg" class="swiper-slide" alt="it-test img 3">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev tablet-element desktop-element"></div>
+                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                    
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
                     <a href="https://testit.co.ua/" class="projects-modal-title">Тест на профессиональную личность в
                         IT</a>
                     <p class="projects-modal-text">Web-приложение, которое поможет родителям определиться к какой
@@ -546,6 +652,10 @@
     <script src="js/project-modals.js"></script>
     <script src="js/modals.js"></script>
     <script src="js/callback-form.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/animation-on-scroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
 </body>
 
 </html>
